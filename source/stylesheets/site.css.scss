@@ -12,7 +12,7 @@ $ctaButton-header-color: $evidence-color !default;
 $ctaButton-radius: 30px !default;
 
 .testata {
-  background-color: #a4b2d1;
+  background-color: #E6E6FA;
 }
 
 .ctaButton {
@@ -24,6 +24,10 @@ $ctaButton-radius: 30px !default;
 
 .form {
     margin: 10px;
+}
+
+.color {
+    background-color: #E6E6FA;
 }
 
 
@@ -41,5 +45,11 @@ $ctaButton-radius: 30px !default;
         font-weight: 300;
         font-style: normal;
         color: $black;
+    }
+}
+
+.largo {
+    li {
+        line-height: rem-calc(45, null);
     }
 }
