@@ -23,8 +23,19 @@
 
   <body class="<%= page_classes %>">
 
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-19846103-36', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
     <div >
-        <img src="https://prismic-io.s3.amazonaws.com/bilca/991ba2aad412be8fb8b6f500a384de9b78c9ac33_bilca-logo.jpg">
+        <a href="/"><img src="https://prismic-io.s3.amazonaws.com/bilca/991ba2aad412be8fb8b6f500a384de9b78c9ac33_bilca-logo.jpg"></a>
     </div>
 
     <section class="title-container show-for-medium" style="background: url(<%= current_page.data.immagineTestata %>) center no-repeat; background-size: cover;">
@@ -82,6 +93,18 @@
 
 
     <%= javascript_include_tag  "all" %>
+
+    <script type="text/javascript">
+        var _iub = _iub || [];
+        _iub.csConfiguration = {
+            cookiePolicyId: 846066,
+            siteId: 390159,
+            lang: "it",
+            priorConsent: false
+        };
+    </script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cookie_solution/safemode/iubenda_cs.js" charset="UTF-8" async></script>
+
 
 
   </body>
